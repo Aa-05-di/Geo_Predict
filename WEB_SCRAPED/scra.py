@@ -20,7 +20,7 @@ for section in sections:
     time.sleep(3)  # Wait for the page to load
     
     # Find all the article links
-    elem = driver.find_elements(By.CSS_SELECTOR, ".sc-c6f6255e-0.eGcloy")  # Adjust the selector if needed
+    elem = driver.find_elements(By.CSS_SELECTOR, ".sc-93223220-0.gcYoBW")  # Adjust the selector if needed
     print(f"{len(elem)} items found in {section}\n")
     
     for elems in elem:

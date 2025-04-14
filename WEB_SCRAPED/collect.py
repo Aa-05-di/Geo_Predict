@@ -2,8 +2,8 @@ from bs4 import BeautifulSoup
 import os
 import pandas as pd
 
-folder = "data"
-captions = []
+folder = "./WEB_SCRAPED/data"
+news_data = []
 
 for file in os.listdir(folder):
     if file.endswith(".html"):
@@ -12,14 +12,21 @@ for file in os.listdir(folder):
 
         soup = BeautifulSoup(html_doc, 'html.parser')
 
-        # Extract the image alt text
-        img_tag = soup.find('img', alt=True)
-        if img_tag:
-            alt_text = img_tag['alt'].strip()
-            captions.append(alt_text)
+        headline = soup.find('h2', {'data-testid': 'card-headline'})
+        description = soup.find('p', {'data-testid': 'card-description'})
+        time = soup.find('span', {'data-testid': 'card-metadata-lastupdated'})
+        tag = soup.find('span', {'data-testid': 'card-metadata-tag'})
+
+        if headline and description and time and tag:
+            news_data.append({
+                'Headline': headline.text.strip(),
+                'Description': description.text.strip(),
+                'Time': time.text.strip(),
+                'Category': tag.text.strip()
+            })
 
 # Create a DataFrame
-df = pd.DataFrame(captions, columns=["Image Caption"])
+df = pd.DataFrame(news_data)
 
 # Write to CSV
-df.to_csv("image_captions.csv", index=False, encoding="utf-8")
+df.to_csv("news_data.csv", index=False, encoding="utf-8")
