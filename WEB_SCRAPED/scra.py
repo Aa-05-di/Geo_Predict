@@ -10,7 +10,7 @@ def scrape_bbc_headlines(base_url, sections, output_folder):
         url = f"{base_url}{section}/"
         driver.get(url)
         time.sleep(3)
-        elem = driver.find_elements(By.CSS_SELECTOR, ".sc-93223220-0.gcYoBW")
+        elem = driver.find_elements(By.CSS_SELECTOR, '[data-testid="dundee-article"]')
         print(f"{len(elem)} items found in {section}\n")
         for elems in elem:
             d = elems.get_attribute("outerHTML")
