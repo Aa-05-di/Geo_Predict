@@ -22,7 +22,7 @@ def send_email(alerts_df):
     msg['From'] = SENDER_EMAIL
     msg['To'] = RECEIVER_EMAIL
 
-    content = "🚨 The following news articles passed LangChain filtering:\n\n"
+    content = "🚨 The following news articles passed LangChain filtering and is likely to affect the stock markets:\n\n"
     for _, row in alerts_df.iterrows():
         content += f"- {row['Relevant_Headline']}\n\n"
 
