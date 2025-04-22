@@ -4,8 +4,9 @@ from email.message import EmailMessage
 from datetime import datetime
 from dotenv import load_dotenv
 import os
-
-load_dotenv()
+from pathlib import Path
+env_path = Path("/Users/aadi/GEO_PREDICT/Geo_Predict/notebooks/.env")
+load_dotenv(dotenv_path=env_path)
 
 CSV_PATH = "/Users/aadi/GEO_PREDICT/Geo_Predict/notebooks/rsentiments.csv"
 SENDER_EMAIL = "aadithyanlearn@gmail.com"
