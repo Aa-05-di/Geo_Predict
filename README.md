@@ -1,2 +1,2 @@
 # Geo_Predict
-Testing Testing
+GeoPredict is a smart analytical tool that monitors and filters geopolitical news likely to impact the stock market. It uses web scraping to collect news articles and updates in real-time. These inputs are processed using LangChain and sentiment analysis techniques to identify events with potential market influence. Relevant findings are then delivered via automated email alerts, helping investors and analysts stay informed and responsive to global developments.
