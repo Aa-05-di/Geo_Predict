@@ -1,0 +1,7 @@
+Headline,Description,Time,Category,SourceFile,sentiment_label,sentiment_score,sentiment_confidence,llm_explanation,Relevant_Headline,timestamp
+Soaring cost of Halloween treats spooks shoppers,"The price of candy, especially chocolate, is up, and Halloween bargain hunters are searching for deals and ways to cut costs.",7 hrs ago,Business,article_1_business.html,Negative,-0.9343,0.9555,"Yes.
+
+Higher costs for candy could reduce consumer spending on Halloween items, potentially impacting confectionery companies' sales and profits, leading to stock price fluctuations.","Soaring cost of Halloween treats spooks shoppers — The price of candy, especially chocolate, is up, and Halloween bargain hunters are searching for deals and ways to cut costs.",2026-10-31T09:47:42.680072
+US tech stocks see sharp falls as AI spending nears $1tn,Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.,8 hrs ago,Business,article_0_business.html,Negative,-0.9689,0.9778,"Yes.
+
+**How:** Falling tech stocks, especially major ones like Intel and the Nasdaq, signal investor concern about high AI spending. This could lead to broader market sell-offs as investors reduce risk.",US tech stocks see sharp falls as AI spending nears $1tn — Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.,2026-10-31T09:47:42.680072
